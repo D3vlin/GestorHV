@@ -16,10 +16,10 @@ Public Class UserDAO
     End Function
 
     Public Function login(name As String, password As String) As User
-        Dim conn As SqlConnection
+        Dim conn As SqlConnection = New SqlConnection()
         Dim cmd As SqlCommand
         Dim dataR As SqlDataReader
-        Dim user As User
+        Dim user As User = Nothing
 
         Try
             conn = Conexion.getInstance().conexionDB()
@@ -35,6 +35,7 @@ Public Class UserDAO
                 user.Id = Convert.ToInt32(dataR("id").ToString())
                 user.Name = dataR("name").ToString()
                 user.Password = dataR("password").ToString()
+                user.Rol = dataR("rol").ToString()
             End If
 
         Catch ex As Exception

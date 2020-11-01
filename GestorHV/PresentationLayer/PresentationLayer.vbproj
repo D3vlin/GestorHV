@@ -107,6 +107,7 @@
     <Content Include="css\datepicker\datepicker3.css" />
     <Content Include="css\daterangepicker\daterangepicker-bs3.css" />
     <Content Include="css\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="css\HomeMaster.css" />
     <Content Include="css\iCheck\all.css" />
     <Content Include="css\iCheck\flat\aero%402x.png" />
     <Content Include="css\iCheck\flat\aero.css" />
@@ -244,6 +245,9 @@
     <Content Include="css\timepicker\bootstrap-timepicker.css" />
     <Content Include="css\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="HomeAdmin.aspx" />
+    <Content Include="HomeCompany.aspx" />
+    <Content Include="HomeEmployee.aspx" />
     <Content Include="img\ajax-loader.gif" />
     <Content Include="img\ajax-loader1.gif" />
     <Content Include="img\avatar.png" />
@@ -401,6 +405,34 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Home.Master.designer.vb">
+      <DependentUpon>Home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Home.Master.vb">
+      <DependentUpon>Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeAdmin.aspx.designer.vb">
+      <DependentUpon>HomeAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAdmin.aspx.vb">
+      <DependentUpon>HomeAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="HomeCompany.aspx.designer.vb">
+      <DependentUpon>HomeCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeCompany.aspx.vb">
+      <DependentUpon>HomeCompany.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="HomeEmployee.aspx.designer.vb">
+      <DependentUpon>HomeEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeEmployee.aspx.vb">
+      <DependentUpon>HomeEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Login.aspx.designer.vb">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
@@ -449,6 +481,7 @@
     <Content Include="js\plugins\input-mask\phone-codes\phone-be.json" />
     <Content Include="js\plugins\input-mask\phone-codes\phone-codes.json" />
     <Content Include="js\plugins\slimScroll\slimScroll.jquery.json" />
+    <Content Include="Home.Master" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

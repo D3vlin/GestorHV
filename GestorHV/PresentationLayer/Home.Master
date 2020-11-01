@@ -1,0 +1,64 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Home.master.vb" Inherits="PresentationLayer.Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Bienvenido</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css"  />
+    <link rel="stylesheet" type="text/css" href="css/AdminLTE.css" />
+    <link rel="stylesheet" type="text/css" href="css/HomeMaster.css"  />
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+<body class="skin-blue">
+    <header class="header">
+        <a href="#" class="logo">SinCamello</a>
+        <nav class="navbar navbar-static-top" role="navigation">
+            <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </nav>
+    </header>
+    <div class="wrapper row-offcanvas row-offcanvas-left">
+        <aside class="left-side sidebar-offcanvas">
+            <section class="sidebar">
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="img/user.jpg" class="img-circle" alt="User Image" />
+                    </div>
+                    <div class="pull-left info">
+                        <p>Bienvenido!</p>
+                        <a href="#"><i class="fa fa-circle text-success"></i>Online</a>
+                    </div>
+                </div>
+                <asp:ContentPlaceHolder ID="sidebarMenu" runat="server" />
+            </section>
+        </aside>
+        <aside class="right-side">
+            <section class="content-header">
+                <h1>
+                    <asp:Label id="lblOpcionMenu" runat="server" Text="Panel General" />
+                </h1>
+            </section>
+            <section class="content">
+                <form id="form1" runat="server">
+                    <div>
+                        <asp:ContentPlaceHolder ID="content" runat="server" />
+                    </div>
+                </form>
+            </section>
+        </aside>
+    </div>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/AdminLTE/app.js"></script>
+</body>
+</html>

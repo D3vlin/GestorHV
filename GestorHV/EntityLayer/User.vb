@@ -3,6 +3,7 @@
     Private pName As String
     Private pEmail As String
     Private pPassword As String
+    Private pRol As String
 
     Public Sub New()
     End Sub
@@ -14,11 +15,11 @@
         Me.pPassword = pPassword
     End Sub
 
-    Public Property Id As String
+    Public Property Id As Integer
         Get
             Return Me.pId
         End Get
-        Set(ByVal value As String)
+        Set(ByVal value As Integer)
             Me.pId = value
         End Set
     End Property
@@ -47,6 +48,15 @@
         End Get
         Set(ByVal value As String)
             Me.pPassword = value
+        End Set
+    End Property
+
+    Public Property Rol As String
+        Get
+            Return Me.pRol
+        End Get
+        Set(ByVal value As String)
+            Me.pRol = value
         End Set
     End Property
 End Class
