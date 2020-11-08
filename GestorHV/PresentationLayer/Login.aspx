@@ -16,7 +16,7 @@
         <form id="form1" runat="server">
             <div class="body bg-gray">
                 <div class="form-group">
-                    <asp:TextBox runat="server" ID="txtEmail" CssClass="form-control" placeholder="Ingrese usuario..." />
+                    <asp:TextBox runat="server" ID="txtEmail" CssClass="form-control" placeholder="Ingrese email..." />
                     <asp:RequiredFieldValidator ValidationGroup="login" ErrorMessage="Debe ingresar su usuario" ControlToValidate="txtEmail" runat="server" CssClass="text-danger" SetFocusOnError="true" />
                 </div>
                 <div class="form-group">
@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="footer">
-                <asp:Button ValidationGroup="login" Text="Iniciar sesión" runat="server" ID="btnLogin" CssClass="btn bg-green-gradient btn-block" />
+                <asp:Button ValidationGroup="login" Text="Iniciar sesión" runat="server" ID="btnLogin" CssClass="btn btn-primary btn-block" />
                 <asp:Button Text="Registrase" runat="server" ID="btnRegister" CssClass="btn bg-olive btn-block" />
             </div>
         </form>

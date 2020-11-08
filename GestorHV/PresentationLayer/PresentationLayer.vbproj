@@ -245,6 +245,7 @@
     <Content Include="css\timepicker\bootstrap-timepicker.css" />
     <Content Include="css\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="GestionarPatrocinadores.aspx" />
     <Content Include="HomeAdmin.aspx" />
     <Content Include="HomeCompany.aspx" />
     <Content Include="HomeEmployee.aspx" />
@@ -406,6 +407,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GestionarPatrocinadores.aspx.designer.vb">
+      <DependentUpon>GestionarPatrocinadores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionarPatrocinadores.aspx.vb">
+      <DependentUpon>GestionarPatrocinadores.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Home.Master.designer.vb">
       <DependentUpon>Home.Master</DependentUpon>
     </Compile>
@@ -419,6 +427,13 @@
     <Compile Include="HomeAdmin.aspx.vb">
       <DependentUpon>HomeAdmin.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="HomeAdmin.master.designer.vb">
+      <DependentUpon>HomeAdmin.master</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAdmin.master.vb">
+      <DependentUpon>HomeAdmin.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="HomeCompany.aspx.designer.vb">
       <DependentUpon>HomeCompany.aspx</DependentUpon>
@@ -490,6 +505,7 @@
     <Content Include="js\plugins\input-mask\phone-codes\phone-codes.json" />
     <Content Include="js\plugins\slimScroll\slimScroll.jquery.json" />
     <Content Include="Home.Master" />
+    <Content Include="HomeAdmin.master" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

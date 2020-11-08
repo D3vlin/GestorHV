@@ -34,8 +34,8 @@
                 </div>
             </div>
             <div class="footer">
-                <asp:Button ValidationGroup="signIn" Text="Registrar" runat="server" ID="btnSingIn" CssClass="btn bg-green-gradient btn-block" />
-                <asp:Button Text="Volver" runat="server" ID="btnBack" CssClass="btn bg-olive btn-block" />
+                <asp:Button ValidationGroup="signIn" Text="Registrar" runat="server" ID="btnSingIn" CssClass="btn btn-primary btn-block" />
+                <asp:Button Text="Volver" runat="server" ID="btnBack" CssClass="btn btn-danger btn-block" />
             </div>
         </form>
     </div>
