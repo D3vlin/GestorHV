@@ -5,7 +5,7 @@ Public Class Login
     Inherits System.Web.UI.Page
 
     Protected Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        Dim user As User = UserBL.getInstance().login(txtUser.Text, txtPassword.Text)
+        Dim user As User = UserBL.getInstance().login(txtEmail.Text, txtPassword.Text)
 
         If user IsNot Nothing Then
             Select Case user.Rol

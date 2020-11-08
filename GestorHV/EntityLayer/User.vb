@@ -1,6 +1,6 @@
 ﻿Public Class User
     Private pId As Integer
-    Private pName As String
+    Private pNames As String
     Private pEmail As String
     Private pPassword As String
     Private pRol As String
@@ -8,9 +8,9 @@
     Public Sub New()
     End Sub
 
-    Public Sub New(pId As Integer, pName As String, pEmail As String, pPassword As String)
+    Public Sub New(pId As Integer, pNames As String, pEmail As String, pPassword As String)
         Me.pId = pId
-        Me.pName = pName
+        Me.pNames = pNames
         Me.pEmail = pEmail
         Me.pPassword = pPassword
     End Sub
@@ -24,12 +24,12 @@
         End Set
     End Property
 
-    Public Property Name As String
+    Public Property Names As String
         Get
-            Return Me.pName
+            Return Me.pNames
         End Get
         Set(ByVal value As String)
-            Me.pName = value
+            Me.pNames = value
         End Set
     End Property
 

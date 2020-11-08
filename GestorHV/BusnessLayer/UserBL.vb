@@ -15,9 +15,9 @@ Public Class UserBL
         Return userBL
     End Function
 
-    Public Function login(name As String, password As String) As User
+    Public Function login(email As String, password As String) As User
         Try
-            Return UserDAO.getInstance().login(name, password)
+            Return UserDAO.getInstance().login(email, password)
         Catch ex As Exception
             Throw ex
         End Try

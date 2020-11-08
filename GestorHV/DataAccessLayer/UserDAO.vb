@@ -15,7 +15,7 @@ Public Class UserDAO
         Return userDAO
     End Function
 
-    Public Function login(name As String, password As String) As User
+    Public Function login(email As String, password As String) As User
         Dim conn As SqlConnection = New SqlConnection()
         Dim cmd As SqlCommand
         Dim dataR As SqlDataReader
@@ -25,7 +25,7 @@ Public Class UserDAO
             conn = Conexion.getInstance().conexionDB()
             cmd = New SqlCommand("spLogin", conn)
             cmd.CommandType = CommandType.StoredProcedure
-            cmd.Parameters.AddWithValue("@pName", name)
+            cmd.Parameters.AddWithValue("@pEmail", email)
             cmd.Parameters.AddWithValue("@pPassword", password)
             conn.Open()
 
@@ -33,7 +33,7 @@ Public Class UserDAO
             If dataR.Read() Then
                 user = New User()
                 user.Id = Convert.ToInt32(dataR("id").ToString())
-                user.Name = dataR("name").ToString()
+                user.Email = dataR("email").ToString()
                 user.Password = dataR("password").ToString()
                 user.Rol = dataR("rol").ToString()
             End If

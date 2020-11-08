@@ -16,8 +16,8 @@
         <form id="form1" runat="server">
             <div class="body bg-gray">
                 <div class="form-group">
-                    <asp:TextBox runat="server" ID="txtUser" CssClass="form-control" placeholder="Ingrese usuario..." />
-                    <asp:RequiredFieldValidator ValidationGroup="login" ErrorMessage="Debe ingresar su usuario" ControlToValidate="txtUser" runat="server" CssClass="text-danger" SetFocusOnError="true" />
+                    <asp:TextBox runat="server" ID="txtEmail" CssClass="form-control" placeholder="Ingrese usuario..." />
+                    <asp:RequiredFieldValidator ValidationGroup="login" ErrorMessage="Debe ingresar su usuario" ControlToValidate="txtEmail" runat="server" CssClass="text-danger" SetFocusOnError="true" />
                 </div>
                 <div class="form-group">
                     <asp:TextBox runat="server" ID="txtPassword" CssClass="form-control" TextMode="Password" placeholder="Ingrese clave..." />
