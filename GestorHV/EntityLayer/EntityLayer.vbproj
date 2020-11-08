@@ -79,6 +79,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Sponsor.vb" />
     <Compile Include="User.vb" />
   </ItemGroup>
   <ItemGroup>
