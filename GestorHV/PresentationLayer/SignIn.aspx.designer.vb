@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Login
+Partial Public Class SignIn
 
     '''<summary>
     '''Control form1.
@@ -23,13 +23,22 @@ Partial Public Class Login
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''Control txtUser.
+    '''Control txtNames.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtUser As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtNames As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control txtEmail.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtEmail As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Control txtPassword.
@@ -41,20 +50,29 @@ Partial Public Class Login
     Protected WithEvents txtPassword As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control btnLogin.
+    '''Control txtRepeatPassword.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnLogin As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents txtRepeatPassword As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control btnRegister.
+    '''Control btnSingIn.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnRegister As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btnSingIn As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control btnBack.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnBack As Global.System.Web.UI.WebControls.Button
 End Class

@@ -25,7 +25,8 @@
                 </div>
             </div>
             <div class="footer">
-                <asp:Button ValidationGroup="login" Text="Iniciar sesión" runat="server" ID="btnLogin" CssClass="btn bg-olive btn-block" />
+                <asp:Button ValidationGroup="login" Text="Iniciar sesión" runat="server" ID="btnLogin" CssClass="btn bg-green-gradient btn-block" />
+                <asp:Button Text="Registrase" runat="server" ID="btnRegister" CssClass="btn bg-olive btn-block" />
             </div>
         </form>
     </div>

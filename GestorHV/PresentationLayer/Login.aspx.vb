@@ -26,4 +26,8 @@ Public Class Login
             Response.Write("<script>alert('USUARIO INCORRECTO')</script>")
         End If
     End Sub
+
+    Protected Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
+        Response.Redirect("SignIn.aspx")
+    End Sub
 End Class
