@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/HomeAdmin.master" CodeBehind="GestionarPatrocinadores.aspx.vb" Inherits="PresentationLayer.GestionarPatrocinadores" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/HomeAdmin.master" CodeBehind="ManageSponsors.aspx.vb" Inherits="PresentationLayer.GestionarPatrocinadores" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="content" runat="server">
     <section class="content-header">

@@ -23,4 +23,13 @@ Public Class SponsorBL
             Throw ex
         End Try
     End Function
+
+    Public Function GetSponsorId(userId As String) As String
+        Try
+            Return SponsorDAO.getInstance().GetSponsorId(userId)
+
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
 End Class

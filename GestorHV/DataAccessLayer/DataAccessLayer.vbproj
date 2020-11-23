@@ -82,6 +82,7 @@
     </Compile>
     <Compile Include="SponsorDAO.vb" />
     <Compile Include="UserDAO.vb" />
+    <Compile Include="VacancyDAO.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

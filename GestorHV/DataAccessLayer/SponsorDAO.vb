@@ -46,4 +46,33 @@ Public Class SponsorDAO
 
         Return response
     End Function
+
+    Public Function GetSponsorId(userId As String) As String
+        Dim conn As SqlConnection = New SqlConnection()
+        Dim cmd As SqlCommand
+        Dim dataR As SqlDataReader
+        Dim response As String = ""
+
+        Try
+            conn = Conexion.getInstance().conexionDB()
+            cmd = New SqlCommand("spGetSponsorId", conn)
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Parameters.AddWithValue("@pUserId", userId)
+            conn.Open()
+
+            dataR = cmd.ExecuteReader()
+            If dataR.Read() Then
+                response = dataR("id").ToString()
+            End If
+
+        Catch ex As Exception
+            response = ""
+            Throw ex
+
+        Finally
+            conn.Close()
+        End Try
+
+        Return response
+    End Function
 End Class

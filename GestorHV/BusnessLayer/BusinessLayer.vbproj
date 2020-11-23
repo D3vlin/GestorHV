@@ -81,6 +81,7 @@
     </Compile>
     <Compile Include="SponsorBL.vb" />
     <Compile Include="UserBL.vb" />
+    <Compile Include="VacancyBL.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

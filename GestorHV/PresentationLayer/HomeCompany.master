@@ -1,4 +1,4 @@
-﻿<%@ Master Language="VB" MasterPageFile="~/Home.Master" AutoEventWireup="false" CodeBehind="HomeAdmin.master.vb" Inherits="PresentationLayer.HomeAdmin1" %>
+﻿<%@ Master Language="VB" MasterPageFile="~/Home.Master" AutoEventWireup="false" CodeBehind="HomeCompany.master.vb" Inherits="PresentationLayer.HomeCompany1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <asp:ContentPlaceHolder ID="head" runat="server" />
@@ -9,18 +9,18 @@
         <li class="active">
             <a href="#">
                 <i class="fa fa-dashboard"></i>
-                <span>Panel Administrador</span>
+                <span>Panel Patrocinador</span>
             </a> 
         </li>
         <li>
-            <a href="ManageSponsors.aspx">
+            <a href="NewVacancy.aspx">
                 <i class="fa fa-th"></i>
-                <span>Gestionar Patrocinadores</span>
+                <span>Nueva Vacante</span>
             </a>
         </li>
     </ul>
 </asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="content" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <asp:ContentPlaceHolder ID="content" runat="server" />
 </asp:Content>

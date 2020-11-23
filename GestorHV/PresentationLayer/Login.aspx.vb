@@ -12,7 +12,8 @@ Public Class Login
                 Case "admin"
                     Response.Redirect("HomeAdmin.aspx")
 
-                Case "company"
+                Case "sponsor"
+                    Session("userId") = user.Id
                     Response.Redirect("HomeCompany.aspx")
 
                 Case "employee"
