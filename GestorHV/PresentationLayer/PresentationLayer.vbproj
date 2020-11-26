@@ -248,11 +248,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="GeneralPanelAdmin.aspx" />
     <Content Include="GeneralPanelCompany.aspx" />
+    <Content Include="GeneralPanelEmployee.aspx" />
     <Content Include="Global.asax" />
     <Content Include="js\AdminList.js" />
-    <Content Include="js\Employees.js" />
     <Content Include="js\SponsorList.js" />
-    <Content Include="js\Vacancies.js" />
+    <Content Include="js\EmployeeList.js" />
     <Content Include="NewVacancy.aspx" />
     <Content Include="ManageSponsors.aspx" />
     <Content Include="HomeAdmin.aspx" />
@@ -435,6 +435,13 @@
     </Compile>
     <Compile Include="GeneralPanelCompany.aspx.vb">
       <DependentUpon>GeneralPanelCompany.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="GeneralPanelEmployee.aspx.designer.vb">
+      <DependentUpon>GeneralPanelEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralPanelEmployee.aspx.vb">
+      <DependentUpon>GeneralPanelEmployee.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Global.asax.vb">

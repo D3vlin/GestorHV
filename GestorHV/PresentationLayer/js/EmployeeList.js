@@ -13,7 +13,7 @@
 function sendDataAjax() {
     $.ajax({
         type: "POST",
-        url: "GeneralPanelCompany.aspx/VacanciesList",
+        url: "GeneralPanelEmployee.aspx/AllVacanciesList",
         data: {},
         contentType: "application/json; charset=utf-8",
         error: function (xhr, ajaxOptions, thrownError) {

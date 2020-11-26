@@ -32,4 +32,13 @@ Public Class VacancyBL
             Throw ex
         End Try
     End Function
+
+    Public Function AllVacanciesList() As List(Of Vacancy)
+        Try
+            Return VacancyDAO.GetInstance().AllVacanciesList()
+
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
 End Class
