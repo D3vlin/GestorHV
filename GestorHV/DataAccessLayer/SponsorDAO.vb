@@ -75,4 +75,36 @@ Public Class SponsorDAO
 
         Return response
     End Function
+
+    Public Function SponsorList() As List(Of Sponsor)
+        Dim sponsors As New List(Of Sponsor)
+        Dim conn As SqlConnection = New SqlConnection()
+        Dim cmd As SqlCommand
+        Dim dataR As SqlDataReader
+
+        Try
+            conn = Conexion.getInstance().conexionDB()
+            cmd = New SqlCommand("spSponsorList", conn)
+            cmd.CommandType = CommandType.StoredProcedure
+            conn.Open()
+
+            dataR = cmd.ExecuteReader()
+            While dataR.Read()
+                Dim sponsor As Sponsor = New Sponsor()
+                sponsor.Nit = dataR("nit").ToString()
+                sponsor.Names = dataR("name").ToString()
+                sponsor.Address = dataR("address").ToString()
+                sponsors.Add(sponsor)
+            End While
+
+        Catch ex As Exception
+            Throw ex
+
+        Finally
+            conn.Close()
+        End Try
+
+        Return sponsors
+    End Function
+
 End Class

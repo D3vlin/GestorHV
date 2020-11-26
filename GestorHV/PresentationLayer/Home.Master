@@ -12,6 +12,12 @@
     <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css"  />
     <link rel="stylesheet" type="text/css" href="css/AdminLTE.css" />
     <link rel="stylesheet" type="text/css" href="css/HomeMaster.css"  />
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/plugins/datatables/jquery.dataTables.js"></script>
+    <script src="js/plugins/datatables/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="js/AdminLTE/app.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server" />
 </head>
 <body class="skin-blue">
@@ -56,9 +62,5 @@
             </section>
         </aside>
     </div>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/AdminLTE/app.js"></script>
 </body>
 </html>

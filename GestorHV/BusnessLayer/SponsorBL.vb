@@ -32,4 +32,13 @@ Public Class SponsorBL
             Throw ex
         End Try
     End Function
+
+    Public Function SponsorList() As List(Of Sponsor)
+        Try
+            Return SponsorDAO.getInstance().SponsorList()
+
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
 End Class

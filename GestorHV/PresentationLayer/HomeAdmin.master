@@ -7,7 +7,7 @@
 <asp:Content ID="sidebarMenu" ContentPlaceHolderID="sidebarMenu" runat="server">
     <ul class="sidebar-menu">
         <li class="active">
-            <a href="#">
+            <a href="GeneralPanelAdmin.aspx">
                 <i class="fa fa-dashboard"></i>
                 <span>Panel Administrador</span>
             </a> 

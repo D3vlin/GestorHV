@@ -11,6 +11,7 @@ Public Class GestionarPatrocinadores
         Dim rsp As Boolean = SponsorBL.getInstance().registerSponsor(sponsor, user)
         If rsp Then
             Response.Write("<script>alert('REGISTRO CORRECTO')</script>")
+            cleanForm()
 
         Else
             Response.Write("<script>alert('REGISTRO INCORRECTO')</script>")
@@ -39,4 +40,13 @@ Public Class GestionarPatrocinadores
         End With
         Return user
     End Function
+
+    Private Sub cleanForm()
+        txtNit.Text = ""
+        txtName.Text = ""
+        txtAddress.Text = ""
+        txtEmail.Text = ""
+        txtPassword.Text = ""
+        txtRepeatPassword.Text = ""
+    End Sub
 End Class
