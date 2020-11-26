@@ -10,6 +10,7 @@ Public Class NewVacancy
         Dim rsp As Boolean = VacancyBL.GetInstance().RegisterNewVacancy(vacancy)
         If rsp Then
             Response.Write("<script>alert('REGISTRO CORRECTO')</script>")
+            cleanForm()
 
         Else
             Response.Write("<script>alert('REGISTRO INCORRECTO')</script>")
@@ -30,4 +31,11 @@ Public Class NewVacancy
         End With
         Return vacancy
     End Function
+
+    Private Sub cleanForm()
+        txtPosition.Text = ""
+        txtSalary.Text = ""
+        txtContract.Text = ""
+        txtExperience.Text = ""
+    End Sub
 End Class

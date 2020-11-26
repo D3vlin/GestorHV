@@ -246,8 +246,10 @@
     <Content Include="css\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="GeneralPanelAdmin.aspx" />
+    <Content Include="GeneralPanelCompany.aspx" />
     <Content Include="Global.asax" />
     <Content Include="js\Sponsors.js" />
+    <Content Include="js\Vacancies.js" />
     <Content Include="NewVacancy.aspx" />
     <Content Include="ManageSponsors.aspx" />
     <Content Include="HomeAdmin.aspx" />
@@ -416,6 +418,13 @@
     </Compile>
     <Compile Include="GeneralPanelAdmin.aspx.vb">
       <DependentUpon>GeneralPanelAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="GeneralPanelCompany.aspx.designer.vb">
+      <DependentUpon>GeneralPanelCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralPanelCompany.aspx.vb">
+      <DependentUpon>GeneralPanelCompany.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Global.asax.vb">

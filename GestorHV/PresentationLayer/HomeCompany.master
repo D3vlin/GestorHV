@@ -7,10 +7,10 @@
 <asp:Content ID="sidebarMenu" ContentPlaceHolderID="sidebarMenu" runat="server">
     <ul class="sidebar-menu">
         <li class="active">
-            <a href="#">
+            <a href="GeneralPanelCompany.aspx">
                 <i class="fa fa-dashboard"></i>
                 <span>Panel Patrocinador</span>
-            </a> 
+            </a>
         </li>
         <li>
             <a href="NewVacancy.aspx">

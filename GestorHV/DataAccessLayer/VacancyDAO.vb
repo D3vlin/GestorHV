@@ -44,4 +44,37 @@ Public Class VacancyDAO
 
         Return response
     End Function
+
+    Public Function VacanciesList(id As Integer) As List(Of Vacancy)
+        Dim vacancies As New List(Of Vacancy)
+        Dim conn As SqlConnection = New SqlConnection()
+        Dim cmd As SqlCommand
+        Dim dataR As SqlDataReader
+
+        Try
+            conn = Conexion.getInstance().conexionDB()
+            cmd = New SqlCommand("spVacanciesList", conn)
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Parameters.AddWithValue("@pSponsorId", id)
+            conn.Open()
+
+            dataR = cmd.ExecuteReader()
+            While dataR.Read()
+                Dim vacancy As Vacancy = New Vacancy()
+                vacancy.Position = dataR("position").ToString()
+                vacancy.Contract = dataR("contract").ToString()
+                vacancy.Salary = dataR("salary").ToString()
+                vacancy.Experience = dataR("experience").ToString()
+                vacancies.Add(vacancy)
+            End While
+
+        Catch ex As Exception
+            Throw ex
+
+        Finally
+            conn.Close()
+        End Try
+
+        Return vacancies
+    End Function
 End Class
