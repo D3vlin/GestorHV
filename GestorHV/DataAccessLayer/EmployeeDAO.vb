@@ -73,4 +73,36 @@ Public Class EmployeeDAO
 
         Return response
     End Function
+
+    Public Function EmployeeList() As List(Of Employee)
+        Dim employees As New List(Of Employee)
+        Dim conn As SqlConnection = New SqlConnection()
+        Dim cmd As SqlCommand
+        Dim dataR As SqlDataReader
+
+        Try
+            conn = Conexion.getInstance().conexionDB()
+            cmd = New SqlCommand("spEmployeeList", conn)
+            cmd.CommandType = CommandType.StoredProcedure
+            conn.Open()
+
+            dataR = cmd.ExecuteReader()
+            While dataR.Read()
+                Dim employee As Employee = New Employee()
+                employee.Identification = dataR("identification").ToString()
+                employee.Names = dataR("names").ToString()
+                employee.Email = dataR("email").ToString()
+                employee.Profession = dataR("profession").ToString()
+                employees.Add(employee)
+            End While
+
+        Catch ex As Exception
+            Throw ex
+
+        Finally
+            conn.Close()
+        End Try
+
+        Return employees
+    End Function
 End Class

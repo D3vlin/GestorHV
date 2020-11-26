@@ -24,5 +24,29 @@
             </div>
         </div>
     </div>
-    <script src="js/Sponsors.js"></script>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box box-primary">
+                <div class="box-header">
+                    <h3 class="box-title">Lista de Empleados</h3>
+                </div>
+                <div class="box-body table-responsive">
+                    <table id="tblEmployees" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td>IDENTIFICACIÓN</td>
+                                <td>NOMBRES</td>
+                                <td>EMAIL</td>
+                                <td>PROFESIÓN</td>
+                            </tr>
+                        </thead>
+                        <tbody id="tblBodyEmployees">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/AdminList.js"></script>
 </asp:Content>

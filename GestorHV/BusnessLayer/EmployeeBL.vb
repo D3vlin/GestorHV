@@ -32,4 +32,13 @@ Public Class EmployeeBL
             Throw ex
         End Try
     End Function
+
+    Public Function EmployeeList() As List(Of Employee)
+        Try
+            Return EmployeeDAO.GetInstance().EmployeeList()
+
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
 End Class
