@@ -23,4 +23,16 @@ Public Class GeneralPanelCompany
         End Try
         Return vacancies
     End Function
+
+    <WebMethod>
+    Public Shared Function EmployeeList() As List(Of Employee)
+        Dim employees As List(Of Employee)
+        Try
+            employees = EmployeeBL.GetInstance().EmployeeList()
+
+        Catch ex As Exception
+            employees = Nothing
+        End Try
+        Return employees
+    End Function
 End Class

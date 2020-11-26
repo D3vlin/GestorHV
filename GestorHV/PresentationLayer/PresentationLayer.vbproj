@@ -251,7 +251,7 @@
     <Content Include="Global.asax" />
     <Content Include="js\AdminList.js" />
     <Content Include="js\Employees.js" />
-    <Content Include="js\Sponsors.js" />
+    <Content Include="js\SponsorList.js" />
     <Content Include="js\Vacancies.js" />
     <Content Include="NewVacancy.aspx" />
     <Content Include="ManageSponsors.aspx" />
