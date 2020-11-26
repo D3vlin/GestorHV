@@ -23,4 +23,13 @@ Public Class EmployeeBL
             Throw ex
         End Try
     End Function
+
+    Public Function UpdateEmployee(employee As Employee) As Boolean
+        Try
+            Return EmployeeDAO.GetInstance().UpdateEmployee(employee)
+
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
 End Class

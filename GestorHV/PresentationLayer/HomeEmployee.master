@@ -1,4 +1,4 @@
-﻿<%@ Master Language="VB" MasterPageFile="~/Home.Master" AutoEventWireup="false" CodeBehind="HomeCompany.master.vb" Inherits="PresentationLayer.HomeCompany1" %>
+﻿<%@ Master Language="VB" MasterPageFile="~/Home.Master" AutoEventWireup="false" CodeBehind="HomeEmployee.master.vb" Inherits="PresentationLayer.HomeEmployee1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <asp:ContentPlaceHolder ID="head" runat="server" />
@@ -7,20 +7,20 @@
 <asp:Content ID="sidebarMenu" ContentPlaceHolderID="sidebarMenu" runat="server">
     <ul class="sidebar-menu">
         <li class="active">
-            <a href="GeneralPanelCompany.aspx">
+            <a href="GeneralPanelEmployee.aspx">
                 <i class="fa fa-dashboard"></i>
-                <span>Panel Patrocinador</span>
+                <span>Panel Empleado</span>
             </a>
         </li>
         <li>
-            <a href="NewVacancy.aspx">
+            <a href="CompleteProfile.aspx">
                 <i class="fa fa-th"></i>
-                <span>Nueva Vacante</span>
+                <span>Completar Perfil</span>
             </a>
         </li>
     </ul>
 </asp:Content>
 
-<asp:Content ID="content" ContentPlaceHolderID="content" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <asp:ContentPlaceHolder ID="content" runat="server" />
 </asp:Content>

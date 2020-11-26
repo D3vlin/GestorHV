@@ -4,6 +4,7 @@
     Private pNames As String
     Private pEmail As String
     Private pProfession As String
+    Private pUserId As String
 
     Public Sub New()
     End Sub
@@ -50,6 +51,15 @@
         End Get
         Set(ByVal value As String)
             Me.pProfession = value
+        End Set
+    End Property
+
+    Public Property UserId As String
+        Get
+            Return Me.pUserId
+        End Get
+        Set(ByVal value As String)
+            Me.pUserId = value
         End Set
     End Property
 End Class
